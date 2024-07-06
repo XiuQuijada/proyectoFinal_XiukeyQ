@@ -1,3 +1,104 @@
 :root{
-    
+    /* Colores */
+    --red100: #e51e1b;
+    --red200: #c01920;
+    --red300: #7d1516;
+    --red-dark400: #381211;
+    --dark100: #4d484f;
+    --dark200: #272f32;
+    --cream100: #e4dace;
+    --cream200: #cfc9bd;
+    --cream300: #bab6ad;
+
+    /* Tipografías */
+
+    --display: "Fire Flight", "Boska", sans-serif;
+    --heading-font: "Boska", "Arial", sans-serif;
+    --body-font: "Satoshi", "Arial", sans-serif; 
+
+    /* Tamaños encabezados */
+
+    --h1: 3.5em;
+    --h2: 2.8em;
+    --h3: 2.1em;
+    --h4: 1.5em;
+    --h5: 1.2em;
+
+    /* Tamaños tipografías */
+
+    --body1-device: 0.875em;
+    --body1-desktop: 0.813em;
+
 }
+
+/* RESET */
+
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+
+}
+
+/* Estilos cabecera 
+
+.header{}
+.header__menu{}
+.header__menu-links{}
+
+/* Estilos Hero 
+
+.hero{}
+.hero__container{}
+.hero__container--texto{}
+
+/* Estilos sección about 
+
+.about{}
+.about__container{}
+.about__bloque{}
+.active{}
+
+/* Estilos sección clases
+
+.clases{}
+.clases__container{}
+.clases__content{}
+.img__clases{}
+.clases__content--text{}
+
+/* Estilos galería 
+
+.gallery{}
+.gallery__container{}
+.gallery__content{}
+.img__gallery{}
+.gallery__content--text{}
+.gallery__link{}
+
+/* Estilos FAQ 
+
+.faq{}
+.faq__container{}
+.faq__bloque{}
+.faq__titulo{}
+.faq__contenido{}
+
+/* Estilos footer 
+
+.footer{}
+.footer__links{}
+.redes{}
+
+*/
