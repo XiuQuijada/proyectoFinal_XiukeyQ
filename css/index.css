@@ -51,23 +51,135 @@ body {
 
 }
 
-/* Estilos cabecera 
+a {
+    font-family: --var(--body-font);
+}
 
-.header{}
-.header__menu{}
-.header__menu-links{}
+h1 {
+    font-size: var(--h1);
+}
 
-/* Estilos Hero 
+h2 {
+    font-size: var(--h2);
+}
 
-.hero{}
-.hero__container{}
-.hero__container--texto{}
+h3 {
+    font-size: var(--h3);
+}
 
-/* Estilos sección about 
+h4 {
+    font-size: var(--h4);
+}
 
-.about{}
-.about__container{}
-.about__bloque{}
+/* Estilos cabecera */
+
+.header{
+    width: 100vw;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--red-dark400);
+    color: var(--cream300);
+    
+}
+
+.header__menu-links{
+    display: flex;
+    align-items: center;
+
+    gap: 1em;
+    font-family: var(--body-font);
+    font-size: 1em;
+}
+
+.header__menu-links li a {
+    color: var(--cream300);
+}
+
+/* Estilos Hero */
+
+.hero{
+    
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.608),rgba(84, 0, 0, 0.608)), url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 5em 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.hero__container--texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    color: var(--cream100);
+}
+
+.hero__container--texto h1 {
+    font-family: var(--h1);
+    color: var(--cream100);
+}
+
+.hero__container--texto a {
+    color: var(--red300);
+    background-color: var(--cream100);
+    padding: 1em;
+    border-radius: 1em;
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Estilos sección about */
+
+.about{
+    background-color: var(--red-dark400);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+
+    color: var(--cream300);
+}
+
+.about__container{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 2em;
+}
+
+.about__bloque{
+    width: 100%;
+    height: 100%;
+    background-color: var(--cream100);
+    border-radius: 1em;
+}
+
+.about__bloque picture {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
 .active{}
 
 /* Estilos sección clases
