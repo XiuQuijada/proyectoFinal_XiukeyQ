@@ -47,12 +47,8 @@ img {
     width: 100%;
 }
 
-body {
-
-}
-
-a {
-    font-family: --var(--body-font);
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
 }
 
 h1 {
@@ -71,15 +67,28 @@ h4 {
     font-size: var(--h4);
 }
 
+h5 {
+    font-size: var(--h5);
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+a{
+    color: var(--cream100);
+    font-family: var(--body-font);
+}
+
 /* Estilos cabecera */
 
 .header{
     width: 100vw;
+    margin: 0 auto;
     display: flex;
     padding: 1em;
     justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
     background-color: var(--red-dark400);
     color: var(--cream300);
     
@@ -138,6 +147,7 @@ h4 {
     font-family: var(--body-font);
     font-weight: bold;
     font-size: 1em;
+    text-align: center;
 }
 
 /* Estilos sección about */
@@ -152,7 +162,7 @@ h4 {
     align-items: center;
     padding: 1em;
 
-    color: var(--cream300);
+    color: var(--cream100);
 }
 
 .about__container{
@@ -180,37 +190,173 @@ h4 {
     transition: .5s ease;
 }
 
+/*
 .active{}
+*/
 
-/* Estilos sección clases
+/* Estilos sección clases */
 
-.clases{}
-.clases__container{}
-.clases__content{}
-.img__clases{}
-.clases__content--text{}
+.clases {
+    width: 100vw;
+    background-color: var(--red300);
+    padding: 2.5em 5em;
+}
 
-/* Estilos galería 
+.clases__container{
+    display: flex;
+    flex-direction: row;
+    gap: 2em
+}
 
-.gallery{}
-.gallery__container{}
+.clases__content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5em;
+}
+
+.clases__content--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
+    color: var(--cream100);
+}
+
+.clases__content--text a {
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: end;
+
+}
+
+.img__clases {
+    width: 100%;
+}
+
+
+/* Estilos galería */
+
+.gallery{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--red-dark400);
+    color: var(--cream100);
+    padding: 2.5em 5em;
+    gap: 1.5em;
+}
+
+.gallery__container{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    color: var(--cream100);
+}
+
+/*
 .gallery__content{}
 .img__gallery{}
 .gallery__content--text{}
-.gallery__link{}
-
-/* Estilos FAQ 
-
-.faq{}
-.faq__container{}
-.faq__bloque{}
-.faq__titulo{}
-.faq__contenido{}
-
-/* Estilos footer 
-
-.footer{}
-.footer__links{}
-.redes{}
-
 */
+
+.gallery__link{
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: end;
+}
+
+/* Estilos FAQ */
+
+.faq{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--red300);
+    padding: 2.5em 5em;
+    gap: 1.5em;
+    color: var(--dark200);
+}
+
+.faq h3 {
+    text-align: center;
+    color: var(--cream100);
+    padding: 0.2em;
+}
+
+.faq__container{
+    width: 100%;
+    padding: 1em;
+    gap: 1em;
+    border-radius: 1em;
+}
+
+.faq__bloque{
+    padding: 1em;
+    background-color: var(--cream300);
+    gap: 1em;
+    border-radius: 1em;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.faq .faq__bloque.active .faq__contenido{
+    height: 4em;
+}
+
+/*
+.faq__titulo{
+}
+*/
+
+.faq__contenido{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    margin-top: 0.5em;
+}
+
+/* Estilos footer */
+
+.footer{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    background-color: var(--red-dark400);
+    color: var(--cream300);
+    font-family: var(--body-font);
+    font-size: 0.75em;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.footer .footer__links ul a{
+    text-decoration: underline;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.redes__container--logos{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
