@@ -1,4 +1,4 @@
-:root{
+:root {
     /* Colores */
     --red100: #e51e1b;
     --red200: #c01920;
@@ -14,7 +14,7 @@
 
     --display: "Fire Flight", "Boska", sans-serif;
     --heading-font: "Boska", "Arial", sans-serif;
-    --body-font: "Satoshi", "Arial", sans-serif; 
+    --body-font: "Satoshi", "Arial", sans-serif;
 
     /* Tamaños encabezados */
 
@@ -33,21 +33,30 @@
 
 /* RESET */
 
-*{
+* {
     box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	border: none;
-	outline: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    width: 100%;
 }
 
 img {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--heading-font);
 }
 
@@ -75,15 +84,15 @@ p {
     font-family: var(--body-font);
 }
 
-a{
+a {
     color: var(--cream100);
     font-family: var(--body-font);
 }
 
 /* Estilos cabecera */
 
-.header{
-    width: 100vw;
+.header {
+    width: 100%;
     margin: 0 auto;
     display: flex;
     padding: 1em;
@@ -91,10 +100,10 @@ a{
     align-items: center;
     background-color: var(--red-dark400);
     color: var(--cream300);
-    
+
 }
 
-.header__menu-links{
+.header__menu-links {
     display: flex;
     align-items: center;
 
@@ -113,11 +122,11 @@ a{
 
 /* Estilos Hero */
 
-.hero{
-    
-    width: 100vw;
+.hero {
+
+    width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.608),rgba(84, 0, 0, 0.608)), url(../assets/banner.jpg);
+    background: linear-gradient(rgba(45, 45, 45, 0.608), rgba(84, 0, 0, 0.608)), url(../assets/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,10 +165,10 @@ a{
 
 /* Estilos sección about */
 
-.about{
+.about {
     background-color: var(--red-dark400);
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -169,17 +178,17 @@ a{
     color: var(--cream100);
 }
 
-.about__container{
+.about__container {
     width: 100%;
     height: 100%;
-    
+
     display: flex;
     flex-direction: row;
     gap: 1em;
     padding: 2em;
 }
 
-.about__bloque{
+.about__bloque {
     width: 100%;
     height: 100%;
     background-color: var(--cream100);
@@ -201,12 +210,12 @@ a{
 /* Estilos sección clases */
 
 .clases {
-    width: 100vw;
+    width: 100%;
     background-color: var(--red300);
     padding: 2.5em 5em;
 }
 
-.clases__container{
+.clases__container {
     display: flex;
     flex-direction: row;
     gap: 2em
@@ -243,8 +252,8 @@ a{
 
 /* Estilos galería */
 
-.gallery{
-    width: 100vw;
+.gallery {
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: var(--red-dark400);
@@ -253,7 +262,7 @@ a{
     gap: 1.5em;
 }
 
-.gallery__container{
+.gallery__container {
     display: flex;
     flex-direction: row;
     gap: 2em;
@@ -266,7 +275,7 @@ a{
 .gallery__content--text{}
 */
 
-.gallery__link{
+.gallery__link {
     font-weight: bold;
     font-size: 0.8em;
     text-align: end;
@@ -274,8 +283,8 @@ a{
 
 /* Estilos FAQ */
 
-.faq{
-    width: 100vw;
+.faq {
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -293,14 +302,14 @@ a{
     padding: 0.2em;
 }
 
-.faq__container{
+.faq__container {
     width: 100%;
     padding: 1em;
     gap: 1em;
     border-radius: 1em;
 }
 
-.faq__bloque{
+.faq__bloque {
     padding: 1em;
     background-color: var(--cream300);
     gap: 1em;
@@ -309,7 +318,7 @@ a{
     cursor: pointer;
 }
 
-.faq .faq__bloque.active .faq__contenido{
+.faq .faq__bloque.active .faq__contenido {
     height: 4em;
 }
 
@@ -318,7 +327,7 @@ a{
 }
 */
 
-.faq__contenido{
+.faq__contenido {
     height: 0;
     padding: 0;
     overflow: hidden;
@@ -328,8 +337,8 @@ a{
 
 /* Estilos footer */
 
-.footer{
-    width: 100vw;
+.footer {
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -341,26 +350,122 @@ a{
     font-size: 0.75em;
 }
 
-.footer__links{
+.footer__links {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 1em;
 }
 
-.footer .footer__links ul a{
+.footer .footer__links ul a {
     text-decoration: underline;
 }
 
-.redes{
+.redes {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 3em;
 
 }
 
-.redes__container--logos{
+.redes__container--logos {
     display: flex;
     flex-direction: row;
     gap: 1em;
+}
+
+/* Página About-Sombras */
+
+.about-sombras__page {
+    width: 100%;
+    color: var(--cream100);
+    background-color: var(--red-dark400);
+
+}
+
+.about-sombras__container--uno {
+    height: 100vh;
+    background: url(../assets/about_sombras--uno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 3em;
+}
+
+.content--right {
+    color: var(--white-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    max-width: 600px;
+}
+
+.about-sombras__container--dos {
+    height: 100vh;
+    background: url(../assets/about_sombras--dos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content--center {
+    max-width: 700px;
+}
+
+.about-sombras__container--tres {
+    background-color: #e51e1b;
+    width: 100%;
+}
+
+.content__tres {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img__about {
+    height: 100vh;
+    max-width: 1000px;
+    min-height: 500px;
+}
+
+.content__tres--text {
+    max-width: 500px;
+}
+
+.about-sombras__container--cuatro {
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--cuatro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content--center {
+    max-width: 700px;
+}
+
+.content--center h4 {
+    color: var(--cream100)
 }
