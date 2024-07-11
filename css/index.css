@@ -375,22 +375,15 @@ a {
     gap: 1em;
 }
 
-/* Página About-Sombras */
+/* Página About-Sombras, About-Akzara */
 
-.about-sombras__page {
+.about-sombras__page, .about-akzara__page {
     width: 100%;
     color: var(--cream100);
     background-color: var(--red-dark400);
-
 }
 
-.about-sombras__container--uno {
-    height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--uno.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+.about-sombras__container--uno, .about-akzara__container--uno, .about-akzara__container--cuatro {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -398,23 +391,15 @@ a {
     padding: 3em;
 }
 
-.content--right {
+.content--right, .content--left{
     color: var(--cream100);
-
     display: flex;
     flex-direction: column;
     gap: 1em;
-
     max-width: 600px;
 }
 
-.about-sombras__container--dos {
-    height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--dos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+.about-sombras__container--dos, .about-akzara__container--dos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -425,43 +410,15 @@ a {
     max-width: 700px;
 }
 
-.about-sombras__container--tres {
-    height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--tres.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
+.about-sombras__container--tres, .about-akzara__container--tres {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     padding: 3em;
-
-}
-
-.content--left {
-    color: var(--cream100);
-
-    gap: 1em;
-
-    max-width: 600px;
-
-}
-
-.img__about {
-    height: 100vh;
-    max-width: 1000px;
-    min-height: 500px;
 }
 
 .about-sombras__container--cuatro {
-    height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--cuatro.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -475,3 +432,72 @@ a {
 .content--center h4 {
     color: var(--cream100)
 }
+
+/* Fondos About-Sombras */
+
+.about-sombras__container--uno {
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--uno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-sombras__container--dos{
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--dos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-sombras__container--tres {
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--tres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-sombras__container--cuatro {
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--cuatro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fondos About-Akzara */
+
+.about-akzara__container--uno {
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_akzara--uno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-akzara__container--dos{
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_akzara--dos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-akzara__container--tres {
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_akzara--tres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-akzara__container--cuatro {
+    height: 100vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_akzara--cuatro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
