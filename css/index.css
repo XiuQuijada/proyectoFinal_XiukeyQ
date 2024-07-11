@@ -445,10 +445,6 @@ a {
     min-height: 500px;
 }
 
-.content__tres--text {
-    max-width: 500px;
-}
-
 .about-sombras__container--cuatro {
     height: 100vh;
     background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_sombras--cuatro.jpg);
