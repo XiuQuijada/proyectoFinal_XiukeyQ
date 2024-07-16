@@ -501,3 +501,12 @@ a {
     background-position: center;
 }
 
+/* Página de contacto */
+
+.contact__container{
+    height: 74.5vh;
+    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/back_contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
