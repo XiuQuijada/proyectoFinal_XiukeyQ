@@ -45,6 +45,7 @@
 
 body {
     width: 100%;
+    height: 100vh;
 }
 
 img {
@@ -197,78 +198,72 @@ a {
 
 /* Estilos sección clases */
 
-.clases {
-    width: 100%;
+.clases{
     background-color: var(--red300);
-    padding: 2.5em 5em;
 }
 
-.clases__container {
-
+.clases, .gallery{
     display: flex;
-    flex-direction: row;
-    gap: 2em;
-
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
 }
 
-.clases__content {
+.clases__content{
+    background-color: var(--red-dark400);
+}
+
+.clases__content, .gallery__content{
+    width: 325px;
+
+
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2em;
+    gap: 0.5em;
+
+    margin: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
 }
 
-.clases__content--text {
+.clases__content:hover, .gallery__content:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.clases__content--text, .gallery__content--text {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1.5em;
+    gap: 1em;
     color: var(--cream100);
+    padding: 1em;
 }
 
-.clases__content--text a {
-    font-weight: bold;
-    font-size: 0.8em;
-    text-align: end;
-
-}
-
-.img__clases {
+.img__clases, .img__gallery {
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: cover;
 }
-
 
 /* Estilos galería */
 
 .gallery {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     background-color: var(--red-dark400);
     color: var(--cream100);
-    padding: 2.5em 5em;
-    gap: 1.5em;
 }
 
 .gallery__container {
     display: flex;
-    flex-direction: row;
-    gap: 2em;
-    color: var(--cream100);
+    flex-wrap: wrap;
 }
 
-/*
-.gallery__content{}
-.img__gallery{}
-.gallery__content--text{}
-*/
-
-.gallery__link {
-    font-weight: bold;
-    font-size: 0.8em;
-    text-align: end;
+.gallery__content{
+    background-color: var(--red300);
 }
 
 /* Estilos FAQ */
