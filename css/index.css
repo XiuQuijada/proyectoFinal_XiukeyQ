@@ -460,7 +460,7 @@ img__clases {
 /* Página de contacto */
 
 .contact{
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/back_contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
