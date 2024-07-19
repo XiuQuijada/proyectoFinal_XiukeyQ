@@ -189,7 +189,7 @@ a {
 }
 
 .hero__container--texto h1 {
-    font-family: var(--h1);
+    font-family: var(--heading-font);
     color: var(--cream100);
 }
 
