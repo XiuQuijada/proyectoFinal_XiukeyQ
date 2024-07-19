@@ -365,15 +365,15 @@ img__clases {
     gap: 1em;
 }
 
-/* Página About-Sombras, About-Akzara */
+/* Página About-Sombras */
 
-.about-sombras__page, .about-akzara__page {
+.about-sombras__page {
     width: 100%;
     color: var(--cream100);
     background-color: var(--red-dark400);
 }
 
-.about-sombras__container--uno, .about-akzara__container--uno, .about-akzara__container--cuatro {
+.about-sombras__container--uno {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -389,7 +389,7 @@ img__clases {
     max-width: 600px;
 }
 
-.about-sombras__container--dos, .about-akzara__container--dos {
+.about-sombras__container--dos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,7 +400,7 @@ img__clases {
     max-width: 700px;
 }
 
-.about-sombras__container--tres, .about-akzara__container--tres {
+.about-sombras__container--tres{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -457,46 +457,31 @@ img__clases {
     background-position: center;
 }
 
-/* Fondos About-Akzara */
-
-.about-akzara__container--uno {
-    height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_akzara--uno.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.about-akzara__container--dos{
-    height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_akzara--dos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.about-akzara__container--tres {
-    height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_akzara--tres.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.about-akzara__container--cuatro {
-    height: 100vh;
-    background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/about_akzara--cuatro.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 /* Página de contacto */
 
-.contact__container{
-    height: 74.5vh;
+.contact{
+    height: 100vh;
     background: linear-gradient(rgba(45, 45, 45, 0.404), rgba(84, 0, 0, 0.432)), url(../assets/back_contact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact__container{
+    display: flex;
+    align-items: center;
+}
+
+.contact--left{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em;
+    border-radius: 1em;
+    background: linear-gradient(rgba(255, 255, 255, 0.404), rgba(163, 0, 0, 0.432)),var(--red100);
 }
