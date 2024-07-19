@@ -90,18 +90,23 @@ a {
     font-family: var(--body-font);
 }
 
+/* Clase general para contenedores */
+.cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 /* Estilos cabecera */
 
 .header {
     width: 100%;
-    margin: 0 auto;
     display: flex;
     padding: 1em;
     justify-content: space-between;
     align-items: center;
     background-color: var(--red-dark400);
     color: var(--cream300);
-
 }
 
 .header__menu-links {
@@ -117,14 +122,9 @@ a {
     color: var(--cream300);
 }
 
-.idioma {
-    font-size: 0.75em;
-}
-
 /* Estilos Hero */
 
 .hero {
-
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(45, 45, 45, 0.608), rgba(84, 0, 0, 0.608)), url(../assets/banner.jpg);
@@ -167,11 +167,16 @@ a {
 /* Estilos sección about */
 
 .about{
+    padding: 1.5em;
     display: flex;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-self: stretch;
+    flex-direction: row;
+    background-color: var(--red-dark400);
+}
+
+.about .cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .about__content{
@@ -182,19 +187,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1 0 0;
-    align-self: stretch;
+    align-self:auto;
 
     gap: 2em;
     padding: 2em;
 }
 
-.about__img{
-    flex: 1 0 0;
-    align-self: stretch;
-    background: url(../assets/seccion_about_index.jpg);
+img__clases {
+    border-radius: 1em;
 }
-
 
 /* Estilos sección clases */
 
@@ -202,7 +203,8 @@ a {
     background-color: var(--red300);
 }
 
-.clases, .gallery{
+.clases{
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -214,6 +216,7 @@ a {
 }
 
 .clases__content, .gallery__content{
+
     width: 325px;
 
 
@@ -255,6 +258,12 @@ a {
 .gallery {
     background-color: var(--red-dark400);
     color: var(--cream100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
 }
 
 .gallery__container {
@@ -295,6 +304,7 @@ a {
 }
 
 .faq__bloque {
+    margin: 1em;
     padding: 1em;
     background-color: var(--cream300);
     gap: 1em;
@@ -306,11 +316,6 @@ a {
 .faq .faq__bloque.active .faq__contenido {
     height: 4em;
 }
-
-/*
-.faq__titulo{
-}
-*/
 
 .faq__contenido {
     height: 0;
