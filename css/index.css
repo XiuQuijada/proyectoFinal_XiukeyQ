@@ -112,6 +112,10 @@ a {
     padding: 1em 2em;
 }
 
+.logo{
+    height: 40px;
+}
+
 .header__menu-links {
     float: right;
     margin-right: 1em;
@@ -141,6 +145,12 @@ a {
     float: right;
     line-height: 80px;
     margin-right: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
 }
 
 /* Estilos Hero */
@@ -506,3 +516,42 @@ img__clases {
     border-radius: 1em;
     background: linear-gradient(rgba(255, 255, 255, 0.404), rgba(163, 0, 0, 0.432)),var(--red100);
 }
+
+
+/* Puntos de quiebre */
+
+@media(max-width:858px){
+    .checkbtn{
+      display: block ;
+    }
+    .header__menu-links{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: var(--dark200);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    .header__menu .header__menu-links li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    
+      }
+    
+      .header__menu .header__menu-links li .active--link{
+        font-size: 20px;
+    }
+    
+    li .active--link:hover, li .active--link.active{
+        background: none;
+        color: red;
+      }
+    
+      #check:checked ~ .header__menu-links{
+        left: 0;
+      }
+    
+    }
