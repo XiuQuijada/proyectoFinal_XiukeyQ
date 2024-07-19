@@ -207,6 +207,7 @@ a {
 /* Estilos sección about */
 
 .about{
+
     padding: 1.5em;
     display: flex;
     flex-direction: row;
@@ -217,7 +218,6 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .about__content{
@@ -234,14 +234,13 @@ a {
     padding: 2em;
 }
 
-img__clases {
+.img__about {
     border-radius: 1em;
 }
 
 /* Estilos sección clases */
 
 .clases{
-    height: 71.1%;
     background-color: var(--red300);
     display: flex;
     justify-content: center;
@@ -363,45 +362,67 @@ img__clases {
 
 /* Estilos footer */
 
-.footer {
+footer{
     width: 100%;
-    padding: 1em;
-    background-color: var(--red-dark400);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.logo{
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.social__icons__container, .footer__menu__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social__icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid var(--cream100);
+    background-image: url(../assets/brand-whatsapp.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social__icon:hover{
+    background-color: var(--red300);
+
+}
+
+.social__icon:nth-of-type(2){
+    background-image: url(../assets/brand-youtube.png) ;
+}
+
+.social__icon:nth-of-type(3){
+    background-image: url(../assets/brand-instagram.png) ;
+}
+
+.footer__menu__container{
+    list-style-type: none;
     color: var(--cream100);
-    font-family: var(--body-font);
-    font-size: 0.75em;
+    font-size: 18px;
 }
 
-.footer__links {
-    width: 100%;
-    display: flex;
-    padding: 1em;
-}
-
-.footer .footer__links ul a {
-    text-decoration: underline;
-}
-
-.redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 3em;
-}
-
-.redes__container--logos {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-
-.footer__img{
-    width: 20px;
-    height: 20px;
-}
-
-.footer .logo{
-    height: 20px;
+.copyrigth{
+    color: var(--red300);
+    text-align: center;
 }
 
 /* Página CLases */
