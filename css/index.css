@@ -99,27 +99,48 @@ a {
 
 /* Estilos cabecera */
 
-.header {
+.header__menu {
     width: 100%;
-    display: flex;
-    padding: 1em;
-    justify-content: space-between;
-    align-items: center;
+    height: 80px;
     background-color: var(--red-dark400);
     color: var(--cream300);
+
+}
+
+.enlace{
+    position: absolute;
+    padding: 1em 2em;
 }
 
 .header__menu-links {
-    display: flex;
-    align-items: center;
+    float: right;
+    margin-right: 1em;
+}
 
-    gap: 1em;
-    font-family: var(--body-font);
-    font-size: 1em;
+.header__menu .header__menu-links li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 0.5em;
 }
 
 .header__menu-links li a {
     color: var(--cream300);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.active--link, li a:hover{
+    background-color: var(--red300);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 2em;
+    color: var(--cream200);
+    float: right;
+    line-height: 80px;
+    margin-right: 1.5em;
 }
 
 /* Estilos Hero */
