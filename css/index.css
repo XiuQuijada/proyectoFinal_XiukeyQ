@@ -208,6 +208,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about__content{
@@ -231,11 +232,8 @@ img__clases {
 /* Estilos sección clases */
 
 .clases{
+    height: 71.1%;
     background-color: var(--red300);
-}
-
-.clases{
-    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -247,9 +245,7 @@ img__clases {
 }
 
 .clases__content, .gallery__content{
-
     width: 325px;
-
 
     display: flex;
     flex-direction: column;
@@ -387,13 +383,24 @@ img__clases {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 3em;
-
 }
 
 .redes__container--logos {
     display: flex;
     flex-direction: row;
     gap: 1em;
+}
+
+.footer__img{
+    width: 20px;
+    height: 20px;
+}
+
+/* Página CLases */
+
+.clases__container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Página About-Sombras */
@@ -521,6 +528,7 @@ img__clases {
 /* Puntos de quiebre */
 
 @media(max-width:858px){
+    
     .checkbtn{
       display: block ;
     }
@@ -539,7 +547,7 @@ img__clases {
         margin: 50px 0;
         line-height: 30px;
     
-      }
+    }
     
       .header__menu .header__menu-links li .active--link{
         font-size: 20px;
@@ -547,7 +555,7 @@ img__clases {
     
     li .active--link:hover, li .active--link.active{
         background: none;
-        color: red;
+        color: var(--red100);
       }
     
       #check:checked ~ .header__menu-links{
