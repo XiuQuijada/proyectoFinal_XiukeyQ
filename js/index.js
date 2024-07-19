@@ -5,12 +5,13 @@
 let pestaña = document.querySelectorAll('.faq__titulo') /* Pestaña del acordeón */
 let content = document.querySelectorAll('.faq__bloque') /* Bloque contenedor del acordeón */
 
-
+// Recorrer todos las pestañas
 pestaña.forEach((titulo, i) => { 
-    // Elimina la clase 'active' de todos los bloques
+    // Asignando un click a cada pestaña
     pestaña[i].addEventListener('click', () => { 
-
+        //Recorre todos los bloques
         content.forEach((contenido, i) => { 
+            // QUita la clase active de los bloques
             content[i].classList.remove('active'); 
         })
 
