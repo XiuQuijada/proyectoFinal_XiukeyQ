@@ -142,7 +142,7 @@ a {
     padding: 0.5em;
 }
 
-.active--link, li a:hover{
+.active--link, .header__menu-links li a:hover{
     background-color: var(--red300);
     font-weight: bold;
     transition: 0.5s;
@@ -365,10 +365,6 @@ img__clases {
 
 .footer {
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 1em;
     background-color: var(--red-dark400);
     color: var(--cream100);
@@ -377,9 +373,8 @@ img__clases {
 }
 
 .footer__links {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     padding: 1em;
 }
 
@@ -402,6 +397,10 @@ img__clases {
 
 .footer__img{
     width: 20px;
+    height: 20px;
+}
+
+.footer .logo{
     height: 20px;
 }
 
